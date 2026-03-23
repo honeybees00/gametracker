@@ -9,6 +9,10 @@ export default supabase;
 
 export const GameServices = () => {
   return (
+
+
+
+    
     <div>GameServices</div>
   )
 }
