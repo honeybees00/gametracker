@@ -1,11 +1,18 @@
 import React from 'react'
-import { Navbar } from './Navbar'
+
+
 
 
 export const GameCard = () => {
   return (
     const GameCard=({game})=>
-      
-    <div>GameCard</div>
-  )
-}
+
+    return(
+      <div className='border p-4 rounded shadow flex justify-betwen'>
+        <p>{game.title}</p>
+        <p>{game.genre}</p>
+      </div>
+    )
+  ),
+};
+export default GameCard;
