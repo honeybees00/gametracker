@@ -1,13 +1,13 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
-import {get Game} from './service/api'
+import {get games ,setGames} from './service/api'
 
 export const HomePage = () => {
   const [games,setGames]=useState([]);
 
   useEffect(()=>{
-    const fetch Game=async()=>{
-      const data=await get Games();
+    const fetch games=async()=>{
+      const data=await get AddGamesPage();
     },[];
   }
 
