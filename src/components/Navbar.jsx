@@ -7,8 +7,8 @@ export const Navbar = () => {
     <nav className='flex justify-between item-center p-4 bg-gray-600 text-white'>
       <h1 className='font-bold'>Game Tracker</h1>
       <div className='flex gap-4'>
-        <link to= '/'>Home</link>
-        <link to= '/add'>Add Game</link>
+        <Navlink to= '/'>Home</Navink>
+        <Navlink to= '/add'>Add Game</Navlink>
       </div>
     </nav>
   )

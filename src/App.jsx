@@ -12,6 +12,7 @@ function App(){
 <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/add' element={<Addgamepage/>}/>
+    <Route path='/nav' element={<Navbar/>}/>
     
 
 </Routes>
