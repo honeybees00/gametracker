@@ -1,18 +1,12 @@
-import React from 'react'
+import React from "react";
 
+const GameCard = ({ game }) => (
+	<div className="container">
+		<div className="border p-4 rounded shadow flex justify-between">
+			<p>{game.title}</p>
+			<p>{game.genre}</p>
+		</div>
+	</div>
+);
 
-
-
-export const GameCard = () => {
-  
-    const GameCard=({game})=>
-
-    
-      <div className='border p-4 rounded shadow flex justify-betwen'>
-        <p>{game.title}</p>
-        <p>{game.genre}</p>
-      </div>
-
-  
-};
 export default GameCard;
