@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import {add game} from '/services/api'
+import {addgame} from '/services/api'
+
+
 
 const handleChange=(e)=>
   setForm({

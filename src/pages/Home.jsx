@@ -3,7 +3,7 @@ import { useEffect,useState } from 'react'
 import {get Games ,setGames} from './service/api'
 import GameCard from '../components/GameCard'
 
-export const HomePage = () => {
+export const Home = () => {
   const [games,setGames]=useState([]);
 
   useEffect(()=>{

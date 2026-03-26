@@ -13,6 +13,6 @@ export const GameCard = () => {
         <p>{game.genre}</p>
       </div>
     )
-  ),
+  )
 };
 export default GameCard;
