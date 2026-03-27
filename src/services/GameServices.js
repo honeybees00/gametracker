@@ -1,11 +1,11 @@
 import React from 'react'
 import { Addgamepage } from '../pages/Addgamepage';
-const url= supabase_url=import.meta.env.VITE_SUPABASE_URL;
-const token= supabase_anon_key=import.meta.env.VITE_SUPABASE_URLVITE_SUPABASE_ANON_KEY;
+const url=import.meta.env.VITE_SUPABASE_URL;
+const token=import.meta.env.VITE_SUPABASE_URLVITE_SUPABASE_ANON_KEY;
 
 
 export const getGames=async () => {
-  const newUrl=${supabase_url}=Addgamepage;
+  const newUrl=$({supabase_url})=Addgamepage;
   const response=await fetch(newUrl, {
     method:"Get",
     headers:{
