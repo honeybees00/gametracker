@@ -17,15 +17,18 @@ export const GameForm = (game) => {
 				<div className="container border rounded-xl p-2 bg-gray-700-gray-m-3">
 					<label>title</label>
 					<input type="text" placeholder="Game Title" />
-					<input
-						value={form.title}
-						onChange={(e) => setForm({ GameForm, title: e.target.value })}/>
+					<input value={form.title} />
+					<select
+						onChange={(e) => setForm({ GameForm, title: e.target.value })}
+					/>
 					<option>Game Title</option>
 					<label>Genre</label>
+
 					<input type="text" placeholder="Genre" />
-					<input
-						value={form.genre}
-						onChange={(e) => setForm({ GameForm, genre: e.target.value })}/>
+					<input value={form.genre} />
+					<select
+						onChange={(e) => setForm({ GameForm, genre: e.target.value })}
+					/>
 					<option>Genre</option>
 					<button className="submit">Submit</button>
 				</div>
