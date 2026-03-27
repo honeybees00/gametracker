@@ -6,12 +6,13 @@ const token=import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export const getGames=async() =>{
 
-  const response=await fetch(url, {
-    method:"Get",
-    headers:{ 
-      'apikey':token 
-    }
-  });
+  const response = await fetch(url, {
+		method: "Get",
+		headers: {
+			"Content-Type": "application/json",
+			apikey: token,
+		},
+	});
   if (!response.ok){
     
 console.error("error fetching games", response.error)
