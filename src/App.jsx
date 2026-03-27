@@ -1,27 +1,28 @@
 import './App.css'
-import React from 'react'
-import {BrowserRouter,Route} from 'react-router'
+import {BrowserRouter,Route,Routes} from 'react-router'
 import {Navbar} from './components/Navbar'
 import {Home} from './pages/Home'
-import {Addgamepage} from './pages/Addgamepage'
-import {GameCard} from './components/GameCard'
+import {AddGamePage} from './pages/AddGamePage'
+import GameCard from './components/GameCard'
 
 function App(){
+    return(
     <BrowserRouter>
-    <Navbar>
+    <Navbar/>
 <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/add' element={<Addgamepage/>}/>
-    <Route path='/nav' element={<Navbar/>}/>
+    <Route path='/add' element={<AddGamePage/>}/>
+    
     
 
 </Routes>
 
 
-    </Navbar>
+    
     
     
     </BrowserRouter>
+    )
 }
-
+export default App
 

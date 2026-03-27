@@ -1,38 +1,43 @@
 import { useState } from "react";
-import { title } from "node:process";
 import React from "react";
-import { error } from "node:console";
-const [form, setForm] = useState({
-	title: "",
-	genre: "",
-});
+
+
 
 //anytime onChange is needed import useState it updates user input//
-export const GameForm = (game) => {
+export const GameForm = ({onSubmit}) => {
+  const [title,setTitle] = useState("");
+  const [genre,setGenre]= useState("")
+  const [rating, setRating] = useState(1);
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+    onSubmit({title,genre,rating:parseInt(rating)})
+  }
 	return (
-		//add onchange//
-
 		<div>
-			<form>
+			<form onSubmit={handleSubmit}>
 				<div className="container border rounded-xl p-2 bg-gray-700-gray-m-3">
 					<label>title</label>
-					<input type="text" placeholder="Game Title" />
-					<input value={form.title} />
-					<select
-						onChange={(e) => setForm({ GameForm, title: e.target.value })}
+					<input
+						value={title}
+						onChange={(e) => setTitle(e.target.value)}
+						type="text"
 					/>
-					<option>Game Title</option>
-					<label>Genre</label>
-          <input type="text" placeholder="Genre" />
-					<input value={form.genre} />
-					<select
-						onChange={(e) => setForm({ GameForm, genre: e.target.value })}
+					<label>genre</label>
+					<input
+						value={genre}
+						onChange={(e) => setGenre(e.target.value)}
+						type="text"
 					/>
-					<option>Genre</option>
-					<button className="submit">Submit</button>
+					<label>rating</label>
+					<input
+						value={rating}
+						onChange={(e) => setRating(e.target.value)}
+						type="text"
+					/>
+					<button type="submit">Submit</button>
 				</div>
 			</form>
 		</div>
 	);
 };
-e.preventDefault;
+

@@ -1,33 +1,47 @@
-import React from 'react'
-import { Addgamepage } from '../pages/Addgamepage';
+import { email } from "zod/mini";
+
 const url=import.meta.env.VITE_SUPABASE_URL;
-const token=import.meta.env.VITE_SUPABASE_URLVITE_SUPABASE_ANON_KEY;
+const token=import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 
-export const getGames=async () => {
-  const newUrl=$({supabase_url})=Addgamepage;
-  const response=await fetch(newUrl, {
+export const getGames=async() =>{
+
+  const response=await fetch(url, {
     method:"Get",
-    headers:{
-      'apikey':token
+    headers:{ 
+      'apikey':token 
     }
   });
-  if (response.ok){
-    const data=await response.json();
-    return data;
-  }else{
+  if (!response.ok){
     
-      const data=[]
-      return(
+console.error("error fetching games", response.error)
+
       
-
-  
-
-
-
+      
+    }else{const data = await response.json();
+		return data;}
+  };
+  export const addGame=async (gameData)=>{
+    const response = await fetch(url, {
+			method: "Post",
+			headers: {
+        "Content-Type":"application/json",
+				apikey: token,
+			},
+			body: JSON.stringify(gameData),
+		});
     
-    <div>GameServices</div>
-      )
-      }
-    };
-  
+  }
+export const deleteGame= async (gameId)=> {
+  const response=await fetch(`${url}?id=eq.${gameId}`,{
+    method:"Delete",
+    headers:{
+      "content-Type":"application/json",
+				apikey: token,
+
+    }
+
+  })
+  if(!response.ok) throw new Error("failed to delete game")
+    return true
+}
