@@ -7,10 +7,15 @@ import {GameServices}from '/servives'
 
 
 export const Addgamepage = async(game) => {
+  
 const [form,setForm]=useState(
   title,"",
   genre,"",
 )
+const handleSubmit=async (e)=>
+  e.preventDefault()
+await addgame(form)
+
   return (
     <div>Addgamepage</div>
   )

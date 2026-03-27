@@ -1,28 +1,25 @@
 import React from 'react'
 import { Addgamepage } from '../pages/Addgamepage';
-const supabase_url = import.meta.env.VITE_SUPABASE_URL;
-const supabase_anon_key = import.meta.env.VITE_SUPABASE_URLVITE_SUPABASE_ANON_KEY;
+const url= supabase_url=import.meta.env.VITE_SUPABASE_URL;
+const token= supabase_anon_key=import.meta.env.VITE_SUPABASE_URLVITE_SUPABASE_ANON_KEY;
 
 
 export const getGames=async () => {
   const newUrl=${supabase_url}=Addgamepage;
-  const response=await fetch(newUrl,VITE_SUPABASE_URL){
-    method:Get
+  const response=await fetch(newUrl, {
+    method:"Get",
     headers:{
-      'api':VITE_SUPABASE_URL
+      'apikey':token
     }
-  }
-  if(response.ok){
+  });
+  if (response.ok){
     const data=await response.json();
     return data;
   }else{
     
       const data=[]
       return(
-
-    ),
-    
-  }
+      
 
   
 
@@ -30,5 +27,7 @@ export const getGames=async () => {
 
     
     <div>GameServices</div>
-  )
-}
+      )
+      }
+    };
+  
