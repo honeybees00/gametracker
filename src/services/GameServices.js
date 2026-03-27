@@ -1,4 +1,4 @@
-import { email } from "zod/mini";
+
 
 const url=import.meta.env.VITE_SUPABASE_URL;
 const token=import.meta.env.VITE_SUPABASE_ANON_KEY;
