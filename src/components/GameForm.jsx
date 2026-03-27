@@ -23,8 +23,7 @@ export const GameForm = (game) => {
 					/>
 					<option>Game Title</option>
 					<label>Genre</label>
-
-					<input type="text" placeholder="Genre" />
+          <input type="text" placeholder="Genre" />
 					<input value={form.genre} />
 					<select
 						onChange={(e) => setForm({ GameForm, genre: e.target.value })}
