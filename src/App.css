@@ -1,15 +1,12 @@
-body{
-    
-    background-color: aqua;
-    text-align: center;
-    color:black;
-    text-shadow: #17d2f3;
 
-}
 
 body {
   background-image: url('"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnvoxJw7zck-PoMfjnRssR9hduyF4vyxnnwwKkuKTtDHeoLjoqFPyd6fVBfbUSr2_V7ux3rlMc5vEwBAdsPpEdu6Nqkxwrzb6b6Lq2HWnVYPnvglO6eM1dyrPax7PuczWNCIxTlA&usqp=CAc");');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+   background-color: aqua;
+    text-align: center;
+    color:blue;
+    text-shadow: #17d2f3;
 }
