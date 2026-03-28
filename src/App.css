@@ -1,14 +1,14 @@
-
-
 body {
-  background-image: url('"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnvoxJw7zck-PoMfjnRssR9hduyF4vyxnnwwKkuKTtDHeoLjoqFPyd6fVBfbUSr2_V7ux3rlMc5vEwBAdsPpEdu6Nqkxwrzb6b6Lq2HWnVYPnvglO6eM1dyrPax7PuczWNCIxTlA&usqp=CAc");');
+  background-image: url("https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnvoxJw7zck-PoMfjnRssR9hduyF4vyxnnwwKkuKTtDHeoLjoqFPyd6fVBfbUSr2_V7ux3rlMc5vEwBAdsPpEdu6Nqkxwrzb6b6Lq2HWnVYPnvglO6eM1dyrPax7PuczWNCIxTlA&usqp=CAc");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- 
-    color:rgb(6, 6, 75);
-    text-shadow: #17d2f3;
-.background {
-  position: fixed;
-  z-index: -1; /* sends it behind everything */
-}}
+
+  color: rgb(6, 6, 75);
+}
+  
+
+main, div {
+  position: relative;
+  z-index: 1;
+}
