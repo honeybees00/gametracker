@@ -2,7 +2,7 @@ import './App.css'
 import {BrowserRouter,Route,Routes} from 'react-router'
 import {Navbar} from './components/Navbar'
 import {Home} from './pages/Home'
-import { AddGamePage } from './pages/Addgamepage'
+import { AddGamePage } from './pages/AddGamePage'
 import GameCard from './components/GameCard'
 
 function App(){
