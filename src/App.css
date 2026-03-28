@@ -5,11 +5,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-   background-color: aqua;
-    text-align: center;
-    color:blue;
+ 
+    color:rgb(6, 6, 75);
     text-shadow: #17d2f3;
 .background {
   position: fixed;
   z-index: -1; /* sends it behind everything */
-}
+}}
