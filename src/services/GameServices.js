@@ -15,7 +15,7 @@ export const getGames=async() =>{
 	});
   if (!response.ok){
     
-console.error("error fetching games", response.error)
+console.error("error fetching games",response.error)
 
       
       

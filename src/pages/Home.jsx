@@ -19,8 +19,8 @@ const fetchGames = async () => {
     setGames(games.filter((game)=>game.id!==id))
   }
 	return (
-		<div className="container">
-			<div className="p-6 flex flex-col gap-4">
+	
+  <div className="p-6 flex flex-col gap-4">
 				<h2 className="text-xl font-bold">All Games</h2>
 				{games.map((game) => (
 					<GameCard key={game.id} game={game} 
@@ -34,8 +34,11 @@ const fetchGames = async () => {
 					))}
 				</div>
 			</div>
-		</div>
+	
+
+    
 	);
 };
 
-export default Home;
+
+

@@ -1,17 +1,3 @@
- body {
-    content: "";
-  position: fixed;
-  background-image: url("https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnvoxJw7zck-PoMfjnRssR9hduyF4vyxnnwwKkuKTtDHeoLjoqFPyd6fVBfbUSr2_V7ux3rlMc5vEwBAdsPpEdu6Nqkxwrzb6b6Lq2HWnVYPnvglO6eM1dyrPax7PuczWNCIxTlA&usqp=CAc");
-  background-size:cover;
-  background-position:cover;
-  background-repeat: no-repeat;
-
-  color: rgb(29, 29, 31);
+body{
+    background-color: aqua;
 }
-  
-
-main, div {
-  position: relative;
-  z-index: 1;
-}
-
